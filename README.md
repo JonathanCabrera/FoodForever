@@ -61,10 +61,13 @@ Optional:
 * Forced Log-in -> Account creation if no log in is available
 * Profile -> Text field to be modified.
 * Settings -> Toggle settings
-<<<<<<< HEAD
 ## Wireframes
-<img src="https://drive.google.com/file/d/1uGmkzwUMWJxmasCELjVyUTrtVbL9sqos/view?usp=sharing" width=300>
-
+<img src=“https://i.imgur.com/5M4Qu6i.jpg” width=200><br>
+<img src=“https://i.imgur.com/UDDf3Yh.jpg” width=200><br>
+<img src=“https://i.imgur.com/Q4sV8qd.jpg” width=200><br>
+<img src=“https://i.imgur.com/8POnFrm.jpg” width=200><br>
+<img src=“https://i.imgur.com/AM5Lvb4.jpg” width=200><br>
+<img src=“https://i.imgur.com/QMx8bup.jpg” width=200><br>
 ### [Bonus] Interactive Prototype 
 <img src="http://g.recordit.co/dWuqMwLlj2.gif" width=200>
 
