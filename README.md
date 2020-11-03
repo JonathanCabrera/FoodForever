@@ -61,6 +61,7 @@ Optional:
 * Forced Log-in -> Account creation if no log in is available
 * Profile -> Text field to be modified.
 * Settings -> Toggle settings
+<<<<<<< HEAD
 ## Wireframes
 <img src="https://i.imgur.com/5M4Qu6i.jpg" width=800><br>
 <img src="https://i.imgur.com/UDDf3Yh.jpg" width=800><br>
@@ -68,3 +69,13 @@ Optional:
 <img src="https://i.imgur.com/8POnFrm.jpg" width=800><br>
 <img src="https://i.imgur.com/AM5Lvb4.jpg" width=800><br>
 <img src="https://i.imgur.com/QMx8bup.jpg" width=800><br>
+=======
+
+## Wireframes
+<img src="https://imgur.com/5M4Qu6i" width=800><br>
+<img src="https://imgur.com/UDDf3Yh" width=800><br>
+<img src="https://imgur.com/Q4sV8qd" width=800><br>
+<img src="https://imgur.com/8POnFrm" width=800><br>
+<img src="https://imgur.com/AM5Lvb4" width=800><br>
+<img src="https://imgur.com/QMx8bup" width=800><br>
+>>>>>>> 3a831cdf6da522d3f525fcdfa83e4d78aaa310f6
