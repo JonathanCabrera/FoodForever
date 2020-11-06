@@ -71,7 +71,7 @@ Assigned to: Jacob Ortiz<br>
 <img src="https://i.imgur.com/Q4sV8qd.jpg" width=200><br>
 Assigned to: Jonathan Cabrera<br>
 <img src="https://i.imgur.com/8POnFrm.jpg" width=200><br>
-Assigned to: Jose Barroso Arredondo
+Assigned to: Jose Barroso Arredondo<br>
 <img src="https://i.imgur.com/AM5Lvb4.jpg" width=200><br>
 
 ### [Bonus] Interactive Prototype
