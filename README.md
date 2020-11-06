@@ -62,11 +62,17 @@ Optional:
 * Profile -> Text field to be modified.
 * Settings -> Toggle settings
 ## Wireframes
-<img src="https://i.imgur.com/5M4Qu6i.jpg" width=200>
+Assigned to: Jade Murray
+<img src="https://i.imgur.com/5M4Qu6i.jpg" width=200><br>
+Assigned to: Jade Murray
 <img src="https://i.imgur.com/UDDf3Yh.jpg" width=200><br>
+Assigned to: Jacob Ortiz
 <img src="https://i.imgur.com/Q4sV8qd.jpg" width=200><br>
+Assigned to: Jonathan Cabrera
 <img src="https://i.imgur.com/8POnFrm.jpg" width=200><br>
+Assigned to: Jose Barroso Arredondo
+
+
 <img src="https://i.imgur.com/AM5Lvb4.jpg" width=200><br>
-<img src="https://i.imgur.com/QMx8bup.jpg" width=200><br>
 ### [Bonus] Interactive Prototype
 <img src="http://g.recordit.co/dWuqMwLlj2.gif" width=200>
