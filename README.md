@@ -76,3 +76,58 @@ Assigned to: Jose Barroso Arredondo<br>
 
 ### [Bonus] Interactive Prototype
 <img src="http://g.recordit.co/dWuqMwLlj2.gif" width=200>
+
+### Models
+
+Login model 
+  - company logo imageview
+  - username label
+  - username textfield
+  - password label
+  - password textfield
+  - login button
+  - signup button
+
+Restarant Scrollable View Model
+  - Image
+  - Restaurant Name
+  - Like button
+  - Visited button
+
+User Profile Model
+  - user imageview
+  - user name label
+  - user bio label
+  - logout button
+ 
+  - recently visited restaurant section
+    - each cell has..
+      - Restaurant ImageView
+      - Restaurant Name label
+      - Restaurant Description
+  - favored restaurant section
+    - each cell has..
+      - restaurant ImageView
+      - Restaurant Name label
+      - Restaurant Description
+      
+Create profile Model
+  - add profile image button & profile image
+  - display user name label
+  - display username textfield
+  - password label
+  - password textfield
+  - email label
+  - email textfield
+  - bio label
+  - bio textfield
+  - sign-up button
+  
+### Networking
+we are using Yelp's API for businesses searches based of latitude and longitude
+
+
+
+
+
+
