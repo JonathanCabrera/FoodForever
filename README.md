@@ -89,8 +89,8 @@ Login model
   - signup button
 
 Restarant Scrollable View Model
-  - Image
-  - Restaurant Name
+  - ImageView
+  - Restaurant Name Label
   - Like button
   - Visited button
 
