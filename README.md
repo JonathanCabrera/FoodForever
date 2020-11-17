@@ -126,6 +126,9 @@ Create profile Model
 ### Networking
 we are using Yelp's API for businesses searches based of latitude and longitude
 
+### Progress GIF
+<img src='http://g.recordit.co/KVsjvaOifz.gif' width='' alt='Video Walkthrough' />
+
 
 
 
