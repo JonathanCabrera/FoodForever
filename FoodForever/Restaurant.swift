@@ -14,13 +14,11 @@ class Restaurant {
     var name: String
     var main_category: String
     var phone: String
-    var rating: Double
     var reviews: Int
     
     init(dict: [String:Any]) {
         image_url = URL(string: dict["image_url"] as! String)
         name = dict["name"] as! String
-        rating = dict["rating"] as! Double
         reviews = dict["review_count"] as! Int
         phone = dict["display_phone"] as! String
         url = URL(string: dict["url"] as! String)

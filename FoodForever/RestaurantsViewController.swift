@@ -9,16 +9,19 @@
 import UIKit
 import AlamofireImage
 
-class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var search_bar: UISearchBar!
     
     var restaurant_array: [Restaurant] = []
+    var filtered_table_data = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        search_bar.delegate = self
         getAPIData()
     }
     
@@ -55,6 +58,12 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             let detail_view_controller = segue.destination as! RestaurantDetailViewController
             detail_view_controller.r = r
         }
+    }
+    
+    // search bar
+    func searchbar(_ search_bar: UISearchBar, textDidChange searchText: String) {
+        
+        
     }
     
 

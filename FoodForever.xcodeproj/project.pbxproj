@@ -22,7 +22,6 @@
 		FD6D0ED8255E3F1700869F48 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */; };
 		FD6D0EDA255E402800869F48 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0ED9255E402800869F48 /* API.swift */; };
 		FD6D0EDC255E494700869F48 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0EDB255E494700869F48 /* Restaurant.swift */; };
-		FD6D0EDE255E52D400869F48 /* YelpStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0EDD255E52D400869F48 /* YelpStars.swift */; };
 		FD6D0EE2255E550800869F48 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		FD6D0ED9255E402800869F48 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FD6D0EDB255E494700869F48 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		FD6D0EDD255E52D400869F48 /* YelpStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpStars.swift; sourceTree = "<group>"; };
 		FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +160,6 @@
 				FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */,
 				FD6D0ED9255E402800869F48 /* API.swift */,
 				FD6D0EDB255E494700869F48 /* Restaurant.swift */,
-				FD6D0EDD255E52D400869F48 /* YelpStars.swift */,
 				FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */,
 			);
 			path = FoodForever;
@@ -426,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6D0ED8255E3F1700869F48 /* RestaurantTableViewCell.swift in Sources */,
-				FD6D0EDE255E52D400869F48 /* YelpStars.swift in Sources */,
 				FD1BAAF4255237A100F17770 /* ViewController.swift in Sources */,
 				FD6D0ED6255E3CBA00869F48 /* RestaurantsViewController.swift in Sources */,
 				FD6D0EDC255E494700869F48 /* Restaurant.swift in Sources */,
