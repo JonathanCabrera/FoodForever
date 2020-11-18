@@ -29,7 +29,6 @@ class RestaurantTableViewCell: UITableViewCell {
             reviews_label.text = String(r.reviews) + " reviews"
             
             // images
-            
             restaurant_image.af.setImage(withURL: r.image_url!)
             restaurant_image.layer.cornerRadius = 10
             restaurant_image.clipsToBounds = true

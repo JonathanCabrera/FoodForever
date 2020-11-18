@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="id7-6I-vDr">
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search..." id="id7-6I-vDr">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -86,7 +86,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHA-KH-sL4">
-                                                    <rect key="frame" x="183" y="12" width="191" height="21"/>
+                                                    <rect key="frame" x="183" y="12" width="191" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -174,12 +174,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfu-C0-YNF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfu-C0-YNF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="289"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1QV-RI-CfL" firstAttribute="bottom" secondItem="dfu-C0-YNF" secondAttribute="bottom" constant="573" id="D2h-g2-qZu"/>
+                            <constraint firstItem="dfu-C0-YNF" firstAttribute="centerX" secondItem="FD9-v6-tAx" secondAttribute="centerX" id="MS4-Ok-aqB"/>
+                            <constraint firstItem="dfu-C0-YNF" firstAttribute="top" secondItem="FD9-v6-tAx" secondAttribute="topMargin" constant="-88" id="Wok-rF-Qti"/>
+                            <constraint firstItem="dfu-C0-YNF" firstAttribute="leading" secondItem="1QV-RI-CfL" secondAttribute="leading" id="dxB-KJ-781"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1QV-RI-CfL"/>
                     </view>
                     <navigationItem key="navigationItem" id="5a2-xn-KgZ"/>
@@ -189,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN5-a7-hIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2294" y="104"/>
+            <point key="canvasLocation" x="2292.753623188406" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kww-2L-I6E">

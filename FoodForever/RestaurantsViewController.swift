@@ -15,14 +15,16 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var search_bar: UISearchBar!
     
     var restaurant_array: [Restaurant] = []
-    var filtered_table_data = [String]()
+    var filtered_table_data: [Restaurant]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         search_bar.delegate = self
+        search_bar.sizeToFit()
         getAPIData()
+        filtered_table_data = restaurant_array
     }
     
     func getAPIData() {
@@ -32,20 +34,19 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             }
             print(restaurants)
             self.restaurant_array = restaurants
+            self.filtered_table_data = self.restaurant_array
             self.tableView.reloadData()
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurant_array.count
+        return filtered_table_data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // restaurant cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell") as! RestaurantTableViewCell
-        
-        let restaurant = restaurant_array[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell", for: indexPath) as! RestaurantTableViewCell
+        let restaurant = filtered_table_data[indexPath.row]
         cell.r = restaurant
         
         return cell
@@ -54,17 +55,44 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         if let index_path = tableView.indexPath(for: cell) {
-            let r = restaurant_array[index_path.row]
+            let r = filtered_table_data[index_path.row]
             let detail_view_controller = segue.destination as! RestaurantDetailViewController
             detail_view_controller.r = r
         }
     }
     
     // search bar
-    func searchbar(_ search_bar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // when there is no text, filtereData is the same as original data
+        print("text changed")
+        filtered_table_data = []
         
+        if searchText == "" {
+            filtered_table_data = restaurant_array
+        } else {
+            for restaurant in restaurant_array {
+                if restaurant.name.lowercased().contains(searchText.lowercased()) {
+                    filtered_table_data.append(restaurant)
+                    print(restaurant.name)
+                }
+                
+            }
+            self.tableView.reloadData()
+            
+        }
         
+//        self.tableView.reloadData()
     }
+    
+//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+//        self.search_bar.showsCancelButton = true
+//    }
+//
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.showsCancelButton = false
+//        searchBar.text = ""
+//        searchBar.becomeFirstResponder()
+//    }
     
 
     /*
