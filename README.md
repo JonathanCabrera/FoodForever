@@ -131,6 +131,8 @@ we are using Yelp's API for businesses searches based of latitude and longitude
 
 <img src='http://g.recordit.co/Xgpyp2djFB.gif' width='' alt='Video Walkthrough' />
 
+<img src='http://g.recordit.co/AM8EROUVI2.gif' width='' alt='Video Walkthrough' />
+
 
 
 
