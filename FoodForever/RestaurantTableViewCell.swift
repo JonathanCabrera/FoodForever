@@ -14,7 +14,6 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var restaurant_image: UIImageView!
     
     @IBOutlet weak var category_label: UILabel!
-    @IBOutlet weak var reviews_label: UILabel!
     @IBOutlet weak var phone_label: UILabel!
     
     var r: Restaurant! {
@@ -26,7 +25,6 @@ class RestaurantTableViewCell: UITableViewCell {
             category_label.sizeToFit()
             
             phone_label.text = r.phone
-            reviews_label.text = String(r.reviews) + " reviews"
             
             // images
             restaurant_image.af.setImage(withURL: r.image_url!)

@@ -35,9 +35,12 @@ struct API {
             } else if let data = data {
                 
                 let data_dictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                let total = data_dictionary["total"]
+                print(total ?? 0)
                 
                 // Get array of restaurant dictionaries
                 let rest_dictionaries = data_dictionary["businesses"] as! [[String: Any]]
+                print(rest_dictionaries)
                 
                 // Variable to store array of Restaurants
                 var restaurants: [Restaurant] = []

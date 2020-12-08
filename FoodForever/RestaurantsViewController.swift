@@ -9,14 +9,14 @@
 import UIKit
 import AlamofireImage
 
-class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var search_bar: UISearchBar!
     
     var restaurant_array: [Restaurant] = []
     var filtered_table_data: [Restaurant]!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -28,11 +28,12 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func getAPIData() {
-        API.getRestaurants { (restaurants) in
+        API.getRestaurants{(restaurants) in
             guard let restaurants = restaurants else {
                 return
             }
             print(restaurants)
+            print(restaurants.count)
             self.restaurant_array = restaurants
             self.filtered_table_data = self.restaurant_array
             self.tableView.reloadData()
@@ -64,7 +65,6 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     // search bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // when there is no text, filtereData is the same as original data
-        print("text changed")
         filtered_table_data = []
         
         if searchText == "" {
@@ -73,27 +73,14 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             for restaurant in restaurant_array {
                 if restaurant.name.lowercased().contains(searchText.lowercased()) {
                     filtered_table_data.append(restaurant)
-                    print(restaurant.name)
                 }
                 
             }
             self.tableView.reloadData()
-            
         }
-        
-//        self.tableView.reloadData()
     }
-    
-//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-//        self.search_bar.showsCancelButton = true
-//    }
-//
-//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//        searchBar.showsCancelButton = false
-//        searchBar.text = ""
-//        searchBar.becomeFirstResponder()
-//    }
-    
+
+
 
     /*
     // MARK: - Navigation
