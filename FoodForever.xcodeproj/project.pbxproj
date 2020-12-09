@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		02291C5F64A1CB0F182CC4D2 /* Pods_FoodForeverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4719805467311348DB676C67 /* Pods_FoodForeverTests.framework */; };
+		2A31A46925687238004BD2E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31A46825687238004BD2E9 /* SignUpViewController.swift */; };
 		723980BAB650DBF2E06451DD /* Pods_FoodForever_FoodForeverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2DEC08093C1D3FC098B231 /* Pods_FoodForever_FoodForeverUITests.framework */; };
 		A2B5E68147DB7E5FECD19609 /* Pods_FoodForever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0257FE8016A2DED1DE081211 /* Pods_FoodForever.framework */; };
 		FD1BAAF0255237A100F17770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAAEF255237A100F17770 /* AppDelegate.swift */; };
 		FD1BAAF2255237A100F17770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAAF1255237A100F17770 /* SceneDelegate.swift */; };
-		FD1BAAF4255237A100F17770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAAF3255237A100F17770 /* ViewController.swift */; };
 		FD1BAAF7255237A100F17770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1BAAF5255237A100F17770 /* Main.storyboard */; };
 		FD1BAAF9255237A100F17770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1BAAF8255237A100F17770 /* Assets.xcassets */; };
 		FD1BAAFC255237A100F17770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1BAAFA255237A100F17770 /* LaunchScreen.storyboard */; };
@@ -46,6 +46,7 @@
 		0257FE8016A2DED1DE081211 /* Pods_FoodForever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodForever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E151887344BD5E524424F9 /* Pods-FoodForever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever.debug.xcconfig"; path = "Target Support Files/Pods-FoodForever/Pods-FoodForever.debug.xcconfig"; sourceTree = "<group>"; };
 		0B456B91A1DE26CAB12A2FB9 /* Pods-FoodForeverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForeverTests.release.xcconfig"; path = "Target Support Files/Pods-FoodForeverTests/Pods-FoodForeverTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A31A46825687238004BD2E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3B1C5F6FCA1BABB359C4EEEE /* Pods-FoodForever-FoodForeverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever-FoodForeverUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodForever-FoodForeverUITests/Pods-FoodForever-FoodForeverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		453C88C21E08BB6EA4E09A54 /* Pods-FoodForever-FoodForeverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever-FoodForeverUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodForever-FoodForeverUITests/Pods-FoodForever-FoodForeverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4719805467311348DB676C67 /* Pods_FoodForeverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodForeverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +56,6 @@
 		FD1BAAEC255237A100F17770 /* FoodForever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1BAAEF255237A100F17770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD1BAAF1255237A100F17770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD1BAAF3255237A100F17770 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD1BAAF6255237A100F17770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD1BAAF8255237A100F17770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD1BAAFB255237A100F17770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,11 +151,11 @@
 			children = (
 				FD1BAAEF255237A100F17770 /* AppDelegate.swift */,
 				FD1BAAF1255237A100F17770 /* SceneDelegate.swift */,
-				FD1BAAF3255237A100F17770 /* ViewController.swift */,
 				FD1BAAF5255237A100F17770 /* Main.storyboard */,
 				FD1BAAF8255237A100F17770 /* Assets.xcassets */,
 				FD1BAAFA255237A100F17770 /* LaunchScreen.storyboard */,
 				FD1BAAFD255237A100F17770 /* Info.plist */,
+				2A31A46825687238004BD2E9 /* SignUpViewController.swift */,
 				FD6D0ED5255E3CBA00869F48 /* RestaurantsViewController.swift */,
 				FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */,
 				FD6D0ED9255E402800869F48 /* API.swift */,
@@ -422,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A31A46925687238004BD2E9 /* SignUpViewController.swift in Sources */,
 				FD6D0ED8255E3F1700869F48 /* RestaurantTableViewCell.swift in Sources */,
 				FD1BAAF4255237A100F17770 /* ViewController.swift in Sources */,
 				FD6D0ED6255E3CBA00869F48 /* RestaurantsViewController.swift in Sources */,
