@@ -10,6 +10,7 @@
 		02291C5F64A1CB0F182CC4D2 /* Pods_FoodForeverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4719805467311348DB676C67 /* Pods_FoodForeverTests.framework */; };
 		0783DC6D2557CF8C00FD792E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783DC6C2557CF8C00FD792E /* LoginViewController.swift */; };
 		0783DC6F2557CFC300FD792E /* FoodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783DC6E2557CFC300FD792E /* FoodFeedViewController.swift */; };
+		2A31A46925687238004BD2E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31A46825687238004BD2E9 /* SignUpViewController.swift */; };
 		723980BAB650DBF2E06451DD /* Pods_FoodForever_FoodForeverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2DEC08093C1D3FC098B231 /* Pods_FoodForever_FoodForeverUITests.framework */; };
 		A2B5E68147DB7E5FECD19609 /* Pods_FoodForever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0257FE8016A2DED1DE081211 /* Pods_FoodForever.framework */; };
 		FD1BAAF0255237A100F17770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAAEF255237A100F17770 /* AppDelegate.swift */; };
@@ -19,6 +20,11 @@
 		FD1BAAFC255237A100F17770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1BAAFA255237A100F17770 /* LaunchScreen.storyboard */; };
 		FD1BAB07255237A100F17770 /* FoodForeverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAB06255237A100F17770 /* FoodForeverTests.swift */; };
 		FD1BAB12255237A100F17770 /* FoodForeverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BAB11255237A100F17770 /* FoodForeverUITests.swift */; };
+		FD6D0ED6255E3CBA00869F48 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0ED5255E3CBA00869F48 /* RestaurantsViewController.swift */; };
+		FD6D0ED8255E3F1700869F48 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */; };
+		FD6D0EDA255E402800869F48 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0ED9255E402800869F48 /* API.swift */; };
+		FD6D0EDC255E494700869F48 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0EDB255E494700869F48 /* Restaurant.swift */; };
+		FD6D0EE2255E550800869F48 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,7 @@
 		0783DC6E2557CFC300FD792E /* FoodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeedViewController.swift; sourceTree = "<group>"; };
 		09E151887344BD5E524424F9 /* Pods-FoodForever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever.debug.xcconfig"; path = "Target Support Files/Pods-FoodForever/Pods-FoodForever.debug.xcconfig"; sourceTree = "<group>"; };
 		0B456B91A1DE26CAB12A2FB9 /* Pods-FoodForeverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForeverTests.release.xcconfig"; path = "Target Support Files/Pods-FoodForeverTests/Pods-FoodForeverTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A31A46825687238004BD2E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3B1C5F6FCA1BABB359C4EEEE /* Pods-FoodForever-FoodForeverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever-FoodForeverUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodForever-FoodForeverUITests/Pods-FoodForever-FoodForeverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		453C88C21E08BB6EA4E09A54 /* Pods-FoodForever-FoodForeverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodForever-FoodForeverUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodForever-FoodForeverUITests/Pods-FoodForever-FoodForeverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4719805467311348DB676C67 /* Pods_FoodForeverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodForeverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +70,11 @@
 		FD1BAB0D255237A100F17770 /* FoodForeverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForeverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1BAB11255237A100F17770 /* FoodForeverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForeverUITests.swift; sourceTree = "<group>"; };
 		FD1BAB13255237A100F17770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6D0ED5255E3CBA00869F48 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		FD6D0ED9255E402800869F48 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FD6D0EDB255E494700869F48 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,12 @@
 				FD1BAAFD255237A100F17770 /* Info.plist */,
 				0783DC6C2557CF8C00FD792E /* LoginViewController.swift */,
 				0783DC6E2557CFC300FD792E /* FoodFeedViewController.swift */,
+				2A31A46825687238004BD2E9 /* SignUpViewController.swift */,
+				FD6D0ED5255E3CBA00869F48 /* RestaurantsViewController.swift */,
+				FD6D0ED7255E3F1700869F48 /* RestaurantTableViewCell.swift */,
+				FD6D0ED9255E402800869F48 /* API.swift */,
+				FD6D0EDB255E494700869F48 /* Restaurant.swift */,
+				FD6D0EE1255E550800869F48 /* RestaurantDetailViewController.swift */,
 			);
 			path = FoodForever;
 			sourceTree = "<group>";
@@ -413,6 +431,14 @@
 				0783DC6D2557CF8C00FD792E /* LoginViewController.swift in Sources */,
 				FD1BAAF0255237A100F17770 /* AppDelegate.swift in Sources */,
 				0783DC6F2557CFC300FD792E /* FoodFeedViewController.swift in Sources */,
+				2A31A46925687238004BD2E9 /* SignUpViewController.swift in Sources */,
+				FD6D0ED8255E3F1700869F48 /* RestaurantTableViewCell.swift in Sources */,
+				FD1BAAF4255237A100F17770 /* ViewController.swift in Sources */,
+				FD6D0ED6255E3CBA00869F48 /* RestaurantsViewController.swift in Sources */,
+				FD6D0EDC255E494700869F48 /* Restaurant.swift in Sources */,
+				FD1BAAF0255237A100F17770 /* AppDelegate.swift in Sources */,
+				FD6D0EDA255E402800869F48 /* API.swift in Sources */,
+				FD6D0EE2255E550800869F48 /* RestaurantDetailViewController.swift in Sources */,
 				FD1BAAF2255237A100F17770 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
