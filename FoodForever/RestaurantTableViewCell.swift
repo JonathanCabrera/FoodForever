@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class RestaurantTableViewCell: UITableViewCell {
 
@@ -32,7 +33,43 @@ class RestaurantTableViewCell: UITableViewCell {
             restaurant_image.clipsToBounds = true
         }
     }
+    
+    var isFav = UserDefaults.standard.bool(forKey: "isFav")
 
+    @IBAction func favRest(_ sender: Any) {
+        if (isFav) {
+            let image = UIImage(named: "favor-icon")
+            (sender as AnyObject).setImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "favor-icon-red")
+            (sender as AnyObject).setImage(image, for: .normal)
+            print("is hearted")
+        }
+
+        isFav = !isFav
+        UserDefaults.standard.set(isFav, forKey: "isFav")
+        UserDefaults.standard.synchronize()
+        
+        let restaurant = PFObject(className: "restaurant")
+        
+        restaurant["name"] = restaurant_name.text
+        restaurant["number"] = phone_label.text
+        restaurant["category"] = category_label.text
+        restaurant["person"] = PFUser.current()!
+        
+        let imageData = imageView?.image?.pngData()
+        let restImage = PFFileObject(name: "image.png", data: imageData!)
+        
+        restaurant["image"] = restImage
+        
+        restaurant.saveInBackground { (success, error) in
+            if success {
+                print("saved")
+            } else {
+                print("error")
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

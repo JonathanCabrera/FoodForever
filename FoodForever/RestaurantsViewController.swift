@@ -80,7 +80,8 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             self.tableView.reloadData()
         }
     }
-
+    
+    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)

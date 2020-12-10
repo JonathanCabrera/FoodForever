@@ -148,6 +148,14 @@
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="rT6-z5-Ltp"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGz-CD-PWp">
+                                                    <rect key="frame" x="301" y="72" width="27" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button" image="favor-icon"/>
+                                                    <connections>
+                                                        <action selector="favRest:" destination="sBb-Nd-kKP" eventType="touchUpInside" id="eDB-Np-Uw9"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="IJI-Ck-2Hs" firstAttribute="leading" secondItem="K4B-nr-DyI" secondAttribute="leading" constant="5" id="EG7-Xd-t7W"/>
@@ -562,6 +570,7 @@
         <segue reference="npw-nN-TRG"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="favor-icon" width="30" height="30"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
