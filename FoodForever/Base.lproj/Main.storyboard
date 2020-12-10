@@ -85,19 +85,19 @@
                     <connections>
                         <outlet property="passwordField" destination="D6z-HO-eZL" id="5eL-35-Jbd"/>
                         <outlet property="usernameField" destination="b6z-oU-HpM" id="L2R-5G-X8f"/>
-                        <segue destination="8l6-f5-4YD" kind="presentation" identifier="loginSegue" id="x5u-kS-k1Z"/>
+                        <segue destination="lrO-hZ-xE1" kind="presentation" identifier="loginSegue" id="7NG-aD-Awc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67" y="104"/>
+            <point key="canvasLocation" x="1683" y="94"/>
         </scene>
         <!--Restaurants View Controller-->
         <scene sceneID="Y4p-Zw-Edv">
             <objects>
                 <viewController id="5jY-zb-EXk" customClass="RestaurantsViewController" customModule="FoodForever" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n1b-ir-6zl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vlm-aR-6I1">
@@ -176,7 +176,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5wA-ki-wfb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JGd-gL-Qaa"/>
+                    <navigationItem key="navigationItem" id="JGd-gL-Qaa">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="DZD-w0-c9S">
+                            <connections>
+                                <action selector="onLogout:" destination="5jY-zb-EXk" id="e8c-cK-skB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="search_bar" destination="id7-6I-vDr" id="q18-L2-vtD"/>
                         <outlet property="tableView" destination="Vlm-aR-6I1" id="UBT-wZ-FNe"/>
@@ -191,14 +197,14 @@
             <objects>
                 <viewController id="YAp-ch-rp4" customClass="RestaurantDetailViewController" customModule="FoodForever" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FD9-v6-tAx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfu-C0-YNF">
-                                <rect key="frame" x="0.0" y="56" width="414" height="267"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="289"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kS-nV-KoR">
-                                <rect key="frame" x="44" y="347" width="253" height="58"/>
+                                <rect key="frame" x="44" y="401" width="253" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -230,10 +236,10 @@
         <!--Navigation Controller-->
         <scene sceneID="kww-2L-I6E">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lrO-hZ-xE1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RestaurantsViewNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="lrO-hZ-xE1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zwl-Xo-kYU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -250,7 +256,7 @@
             <objects>
                 <viewController id="SUb-0p-YEq" customClass="SignUpViewController" customModule="FoodForever" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nF4-MF-BGJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I67-Vi-zER">
@@ -361,10 +367,10 @@
         <!--Navigation Controller-->
         <scene sceneID="F8L-vb-HMw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf3-3T-PjP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Mf3-3T-PjP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z5E-dU-vzY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -381,7 +387,7 @@
             <objects>
                 <viewController id="nPc-6e-H0C" customClass="FoodFeedViewController" customModule="FoodForever" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aob-UA-m0L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="otP-S1-Wcm"/>
@@ -404,7 +410,7 @@
                 <navigationController storyboardIdentifier="FoodFeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="8l6-f5-4YD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qqd-1J-Bpy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -417,6 +423,9 @@
             <point key="canvasLocation" x="-814" y="829"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="npw-nN-TRG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
     </resources>

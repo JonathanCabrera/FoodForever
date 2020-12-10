@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate {
     
@@ -80,7 +81,19 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
 
-
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {
+            return
+        }
+        delegate.window?.rootViewController = loginViewController
+        
+        print("user logged out")
+    }
+    
 
     /*
     // MARK: - Navigation
