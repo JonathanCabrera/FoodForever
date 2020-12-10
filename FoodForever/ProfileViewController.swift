@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Parse
 import AlamofireImage
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-//    @IBOutlet weak var profileImage: UIImageView!
-//    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var username_label: UILabel!
+    @IBOutlet weak var biography_label: UILabel!
+    @IBOutlet weak var image_label: UIImageView!
     
     var restaurant_array: [Restaurant] = []
     var filtered_table_data: [Restaurant]!
@@ -22,7 +24,13 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableview.delegate = self
         tableview.dataSource = self
         getAPIData()
+        getProfileValues()
         filtered_table_data = restaurant_array
+    }
+    
+    func getProfileValues() {
+        print("workingProfileValue")
+        var currentUser = PFUser.current()
     }
     
     func getAPIData() {
@@ -30,8 +38,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             guard let restaurants = restaurants else {
                 return
             }
-            print(restaurants)
-            print(restaurants.count)
+            //print(restaurants)
+            //print(restaurants.count)
             self.restaurant_array = restaurants
             self.filtered_table_data = self.restaurant_array
             self.tableview.reloadData()

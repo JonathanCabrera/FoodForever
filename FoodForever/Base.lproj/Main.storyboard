@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tEG-98-DgX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -513,8 +513,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2T-Ie-MVD">
-                                <rect key="frame" x="77" y="208" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="77" y="208" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="biography" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ker-RO-uEV">
                                 <rect key="frame" x="208" y="126" width="76.5" height="20.5"/>
@@ -535,7 +535,7 @@
                             <constraint firstItem="zrV-Ld-tNf" firstAttribute="top" secondItem="q2T-Ie-MVD" secondAttribute="bottom" constant="87" id="ReH-64-lp7"/>
                             <constraint firstItem="sG6-YC-Jh0" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ker-RO-uEV" secondAttribute="trailing" constant="129.5" id="bPg-2P-cuw"/>
                             <constraint firstItem="2pc-Mv-qNf" firstAttribute="leading" secondItem="sG6-YC-Jh0" secondAttribute="leading" constant="28" id="dbF-lF-zeA"/>
-                            <constraint firstItem="sG6-YC-Jh0" firstAttribute="trailing" secondItem="q2T-Ie-MVD" secondAttribute="trailing" constant="291" id="e7G-ns-XNR"/>
+                            <constraint firstItem="sG6-YC-Jh0" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="q2T-Ie-MVD" secondAttribute="trailing" constant="291" id="e7G-ns-XNR"/>
                             <constraint firstItem="jHY-Ff-XNI" firstAttribute="leading" secondItem="2pc-Mv-qNf" secondAttribute="trailing" constant="14" id="jUH-ka-YT1"/>
                             <constraint firstItem="jHY-Ff-XNI" firstAttribute="top" secondItem="sG6-YC-Jh0" secondAttribute="top" constant="12" id="ktU-oh-nsj"/>
                             <constraint firstItem="ker-RO-uEV" firstAttribute="top" secondItem="jHY-Ff-XNI" secondAttribute="bottom" constant="49" id="qyS-Q1-ynU"/>
@@ -544,12 +544,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="biography_label" destination="ker-RO-uEV" id="csR-1S-2Ax"/>
+                        <outlet property="image_label" destination="2pc-Mv-qNf" id="Qgk-DP-5K7"/>
                         <outlet property="tableview" destination="ND1-yl-Bl4" id="ROg-nc-eLZ"/>
+                        <outlet property="username_label" destination="jHY-Ff-XNI" id="Tbk-Wh-vcR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9J-hI-ek5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1611.5942028985507" y="1575.6696428571429"/>
+            <point key="canvasLocation" x="825" y="1576"/>
         </scene>
     </scenes>
     <resources>
