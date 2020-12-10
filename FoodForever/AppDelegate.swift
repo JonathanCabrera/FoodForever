@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.current() != nil {
           let main = UIStoryboard(name: "Main", bundle: nil)
-            let foodFeedNavigationController = main.instantiateViewController(withIdentifier: "FoodFeedNavigationController")
+            let restaurantsViewNavigationController = main.instantiateViewController(withIdentifier: "RestaurantsViewNavigationController")
             
             //window?.rootViewController = foodFeedNavigationController
         }
