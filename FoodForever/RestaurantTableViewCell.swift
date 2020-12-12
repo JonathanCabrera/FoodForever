@@ -57,10 +57,8 @@ class RestaurantTableViewCell: UITableViewCell {
         restaurant["category"] = category_label.text
         restaurant["person"] = PFUser.current()!
         
-        let imageData = imageView?.image?.pngData()
-        let restImage = PFFileObject(name: "image.png", data: imageData!)
         
-        restaurant["image"] = restImage
+//        restaurant["image"] = restaurant_image.af.setImage(withURL: r.image_url!)
         
         restaurant.saveInBackground { (success, error) in
             if success {

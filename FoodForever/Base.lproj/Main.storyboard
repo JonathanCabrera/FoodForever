@@ -188,6 +188,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JGd-gL-Qaa">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="DZD-w0-c9S">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="onLogout:" destination="5jY-zb-EXk" id="e8c-cK-skB"/>
                             </connections>
@@ -251,6 +252,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zwl-Xo-kYU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.38276219369999998" green="0.80177897210000004" blue="0.65096390250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -320,7 +326,7 @@
                                 <rect key="frame" x="20" y="531" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Lm-BG-mm8">
                                 <rect key="frame" x="20" y="628" width="374" height="34"/>
@@ -337,7 +343,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPC-Pa-BhH">
                                 <rect key="frame" x="165" y="797" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign-Up"/>
+                                <state key="normal" title="Sign-Up">
+                                    <color key="titleColor" red="0.38276219369999998" green="0.80177897210000004" blue="0.65096390250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="SUb-0p-YEq" eventType="touchUpInside" id="yoi-u0-PPc"/>
                                     <segue destination="lrO-hZ-xE1" kind="presentation" id="npw-nN-TRG"/>
@@ -346,6 +354,7 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ddC-N1-x6g">
                                 <rect key="frame" x="105" y="100.5" width="176" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.38276219369999998" green="0.80177897210000004" blue="0.65096390250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qJK-KM-hbq" appends="YES" id="uCx-xQ-JHP"/>
@@ -377,7 +386,7 @@
         <!--Navigation Controller-->
         <scene sceneID="F8L-vb-HMw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Mf3-3T-PjP" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="signUpSegue" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Mf3-3T-PjP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z5E-dU-vzY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
